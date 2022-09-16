@@ -20,28 +20,34 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false,"avatar":null,"url":"/images/avatar.png","rounded":false,"rotated":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="hexo写作通过上一篇文章我们大概学会了如何部署，现在学习写作。 一：语法： hexo遵循markdown语法： Markdown语法。 你可以执行下列命令来创建一篇新文章或者新的页面。 $ hexo new [layout] &lt;title&gt; hexo 有三种默认布局([layout])：post、page 和 draft。它们将会被保存到不同的路径。 123post	source&#x2F;_">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo搭建博客(二)">
+<meta property="og:url" content="http://example.com/2022/09/16/hexo-two/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="hexo写作通过上一篇文章我们大概学会了如何部署，现在学习写作。 一：语法： hexo遵循markdown语法： Markdown语法。 你可以执行下列命令来创建一篇新文章或者新的页面。 $ hexo new [layout] &lt;title&gt; hexo 有三种默认布局([layout])：post、page 和 draft。它们将会被保存到不同的路径。 123post	source&#x2F;_">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-09-16T15:50:00.000Z">
+<meta property="article:modified_time" content="2022-09-16T16:42:20.911Z">
 <meta property="article:author" content="hutianpeng">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="博客">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2022/09/16/hexo-two/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>Hexo</title>
+  <title>hexo搭建博客(二) | Hexo</title>
   
 
 
@@ -149,85 +155,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/09/17/hexo-three/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="hutianpeng">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/09/17/hexo-three/" class="post-title-link" itemprop="url">hexo搭建博客(三)</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-09-17 00:46:00 / 修改时间：01:00:09" itemprop="dateCreated datePublished" datetime="2022-09-17T00:46:00+08:00">2022-09-17</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
 
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="next主题"><a href="#next主题" class="headerlink" title="next主题"></a>next主题</h2><p>这篇文章简要介绍下next主题的使用，具体内容请查看：<a target="_blank" rel="noopener" href="http://theme-next.iissnan.com/" title="next教程">next使用文档</a></p>
-<h3 id="一：安装与启用："><a href="#一：安装与启用：" class="headerlink" title="一：安装与启用："></a>一：安装与启用：</h3><ol>
-<li>安装：<br> <code>$ git clone https://github.com/theme-next/hexo-theme-next</code><ol>
-<li>按照使用文档中的会失败，请用上面这个。</li>
-<li>之后会得到hexo-theme-next文件夹，把它改名为next并放入themes文件夹下</li>
-</ol>
-</li>
-<li>启用：<br>找到站点配置文件_config.yml，修改themes字段为next：<br> <code>theme: next</code></li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -243,10 +174,9 @@
       <meta itemprop="name" content="Hexo">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/09/16/hexo-two/" class="post-title-link" itemprop="url">hexo搭建博客(二)</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          hexo搭建博客(二)
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -285,7 +215,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="hexo写作"><a href="#hexo写作" class="headerlink" title="hexo写作"></a>hexo写作</h2><p>通过上一篇文章我们大概学会了如何部署，现在学习写作。</p>
+        <h2 id="hexo写作"><a href="#hexo写作" class="headerlink" title="hexo写作"></a>hexo写作</h2><p>通过上一篇文章我们大概学会了如何部署，现在学习写作。</p>
 <h3 id="一：语法："><a href="#一：语法：" class="headerlink" title="一：语法："></a>一：语法：</h3><ol>
 <li>hexo遵循markdown语法： <a target="_blank" rel="noopener" href="https://markdown.com.cn/" title="markdown教程">Markdown语法</a>。</li>
 <li>你可以执行下列命令来创建一篇新文章或者新的页面。<br> <code>$ hexo new [layout] &lt;title&gt;</code><br> hexo 有三种默认布局([layout])：post、page 和 draft。它们将会被保存到不同的路径。<br> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">post	source/_posts</span><br><span class="line">page	source</span><br><span class="line">draft	source/_drafts</span><br></pre></td></tr></table></figure></li>
@@ -327,197 +257,37 @@
 </li>
 </ol>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
+              <a href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"># 博客</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/09/16/hexo-one/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="hutianpeng">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/09/16/hexo-one/" class="post-title-link" itemprop="url">hexo搭建博客(一)</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-09-16 18:25:13" itemprop="dateCreated datePublished" datetime="2022-09-16T18:25:13+08:00">2022-09-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-09-17 00:43:14" itemprop="dateModified" datetime="2022-09-17T00:43:14+08:00">2022-09-17</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="基于hexo-GitHubpages生成博客"><a href="#基于hexo-GitHubpages生成博客" class="headerlink" title="基于hexo+GitHubpages生成博客"></a>基于hexo+GitHubpages生成博客</h2><h4 id="一：准备工作："><a href="#一：准备工作：" class="headerlink" title="一：准备工作："></a>一：准备工作：</h4><ol>
-<li><p>首先，要确保电脑上有node和Git，然后再下载hexo(这两个请看其他文章)；</p>
-</li>
-<li><p>Git操作：</p>
-<ol>
-<li>配置用户签名(此处的用户名和邮箱与你在GitHub上的半毛钱关系都没有，其实可以乱填) <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;github 用户名&quot;</span><br><span class="line">git config --global user.email &quot;github 注册邮箱&quot;</span><br></pre></td></tr></table></figure></li>
-<li>生成ssh密钥(这里的邮箱才是你GitHub账号的注册邮箱) <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;github 注册邮箱&quot;</span><br><span class="line">####################################</span><br><span class="line">比如我的就是：</span><br><span class="line">ssh-keygen -t rsa -C &quot;292812****@qq.com&quot;</span><br></pre></td></tr></table></figure></li>
-<li>执行上述命令后应该会生成两个文件，<code>id_rsa</code>和<code>id_rsa.pub</code>。他们的位置应该在C盘用户下的.ssh文件夹下。复制<code>id_rsa.pub</code>里面的内容。</li>
-<li>好了，现在来到GitHub页面，点击你的头像框，点击settings。然后在左侧找到<code>SSH and GPG keys</code>，再点击SSH keys右边的New SSH key。在里面key框粘贴你复制的内容，title随便根据自己填一个。最后点击Add SSH key即可。<br> <img src="/../img/SSH-github.jpg" alt="这是图片" title="Magic Gardens"></li>
-</ol>
-</li>
-<li><p>hexo安装：</p>
-<ol>
-<li>首先安装hexo<br> <code>npm i hexo-cli -g</code></li>
-<li>新建一个文件夹用于存放你的博客，比如我的就叫hexo，然后初始化并安装必备组件(注意要进入此文件夹再右键Git Bash Here)： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo init .</span><br><span class="line">npm install hexo-deployer-git --save #安装一键部署插件</span><br></pre></td></tr></table></figure></li>
-<li>初始化后会出现一些文件，其目录结构为： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">├── _config.yml # 网站配置信息</span><br><span class="line">├── package.json # 应用程序信息</span><br><span class="line">├── scaffolds # 模板文件夹</span><br><span class="line">├── source # 存放用户资源</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes # 主题文件夹</span><br></pre></td></tr></table></figure></li>
-<li>然后输入如下命令： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 生成静态网页</span><br><span class="line">hexo g</span><br><span class="line"># 打开本地服务器</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></li>
-<li>不出所料地话，应该开再4000端口上。</li>
-</ol>
-</li>
-</ol>
-<h4 id="二：部署到GitHubpages上："><a href="#二：部署到GitHubpages上：" class="headerlink" title="二：部署到GitHubpages上："></a>二：部署到GitHubpages上：</h4><ol>
-<li><p>创建仓库：新建一个仓库，而且得确保你的仓库是 public，同时，仓库名一定要是：<code>用户名.http://github.io</code></p>
-</li>
-<li><p>在hexo文件夹里(看你之前存放博客的文件夹是哪里)找到站点配置文件 <code>_config.yml</code>，找到并配置如下：</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git </span><br><span class="line">    repository: https://github.com/htpzunjian/htpzunjian.github.io.git #这是我的仓库地址</span><br><span class="line">    branch: main</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>执行以下命令：</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean #清除缓存</span><br><span class="line">hexo g 生成静态网页</span><br><span class="line">hexo d 部署，d即之前提到过的deploy</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>注意：初次hexo d会弹出来一个框，我点的似乎是上面那个选项，在浏览器进行了操作(此时我已经在浏览器登陆了GitHub)，把GitHub授权后就行。</p>
-</li>
-</ol>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/09/16/hexo-one/" rel="prev" title="hexo搭建博客(一)">
+      <i class="fa fa-chevron-left"></i> hexo搭建博客(一)
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/09/17/hexo-three/" rel="next" title="hexo搭建博客(三)">
+      hexo搭建博客(三) <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/09/16/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="hutianpeng">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/09/16/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-09-16 15:44:28" itemprop="dateCreated datePublished" datetime="2022-09-16T15:44:28+08:00">2022-09-16</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -570,6 +340,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo%E5%86%99%E4%BD%9C"><span class="nav-number">1.</span> <span class="nav-text">hexo写作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%EF%BC%9A%E8%AF%AD%E6%B3%95%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">一：语法：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%EF%BC%9A%E5%88%86%E7%B1%BB%E4%B8%8E%E6%A0%87%E7%AD%BE%EF%BC%9A"><span class="nav-number">1.2.</span> <span class="nav-text">二：分类与标签：</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
