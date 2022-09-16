@@ -159,7 +159,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/09/16/htpstudy-md/" class="post-title-link" itemprop="url">htpstudy.md</a>
+            <a href="/2022/09/16/htpstudy-md/" class="post-title-link" itemprop="url">未命名</a>
         </h2>
 
         <div class="post-meta">
@@ -170,7 +170,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2022-09-16 16:32:47 / 修改时间：16:41:13" itemprop="dateCreated datePublished" datetime="2022-09-16T16:32:47+08:00">2022-09-16</time>
+              <time title="创建时间：2022-09-16 16:32:47 / 修改时间：22:06:26" itemprop="dateCreated datePublished" datetime="2022-09-16T16:32:47+08:00">2022-09-16</time>
             </span>
 
           
@@ -184,7 +184,36 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>哈哈</p>
+          <h2 id="基于hexo-GitHubpages生成博客"><a href="#基于hexo-GitHubpages生成博客" class="headerlink" title="基于hexo+GitHubpages生成博客"></a>基于hexo+GitHubpages生成博客</h2><h4 id="准备工作："><a href="#准备工作：" class="headerlink" title="准备工作："></a>准备工作：</h4><ol>
+<li><p>首先，要确保电脑上有node和Git，然后再下载hexo(这两个请看其他文章)；</p>
+</li>
+<li><p>Git操作：</p>
+<ol>
+<li>配置用户签名(此处的用户名和邮箱与你在GitHub上的半毛钱关系都没有，其实可以乱填) <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;github 用户名&quot;</span><br><span class="line">git config --global user.email &quot;github 注册邮箱&quot;</span><br></pre></td></tr></table></figure></li>
+<li>生成ssh密钥(这里的邮箱才是你GitHub账号的注册邮箱) <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;github 注册邮箱&quot;</span><br><span class="line">####################################</span><br><span class="line">比如我的就是：</span><br><span class="line">ssh-keygen -t rsa -C &quot;292812****@qq.com&quot;</span><br></pre></td></tr></table></figure></li>
+<li>执行上述命令后应该会生成两个文件，<code>id_rsa</code>和<code>id_rsa.pub</code>。他们的位置应该在C盘用户下的.ssh文件夹下。复制<code>id_rsa.pub</code>里面的内容。</li>
+<li>好了，现在来到GitHub页面，点击你的头像框，点击settings。然后在左侧找到<code>SSH and GPG keys</code>，再点击SSH keys右边的New SSH key。在里面key框粘贴你复制的内容，title随便根据自己填一个。最后点击Add SSH key即可。<br> 截图（此处应该有图，后面补上）</li>
+</ol>
+</li>
+<li><p>hexo安装：</p>
+<ol>
+<li>首先安装hexo<br> <code>npm i hexo-cli -g</code></li>
+<li>新建一个文件夹用于存放你的博客，比如我的就叫hexo，然后初始化并安装必备组件(注意要进入此文件夹再右键Git Bash Here)： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo init .</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></li>
+<li>初始化后会出现一些文件，其目录结构为： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">等我自己看明白再说</span><br></pre></td></tr></table></figure></li>
+<li>然后输入如下命令： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 生成静态网页</span><br><span class="line">hexo g</span><br><span class="line"># 打开本地服务器</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></li>
+<li>不出所料地话，应该开再4000端口上。</li>
+</ol>
+</li>
+</ol>
+<h4 id="部署到GitHubpages上："><a href="#部署到GitHubpages上：" class="headerlink" title="部署到GitHubpages上："></a>部署到GitHubpages上：</h4><ol>
+<li><p>创建仓库：新建一个仓库，而且得确保你的仓库是 public，同时，仓库名一定要是：<code>用户名.http://github.io</code></p>
+</li>
+<li><p>在hexo文件夹里(看你之前存放博客的文件夹是哪里)找到站点配置文件 <code>_config.yml</code>，找到并配置如下：</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git </span><br><span class="line">    repository: https://github.com/htpzunjian/htpzunjian.github.io.git #这是我的仓库地址</span><br><span class="line">    branch: main</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>执行以下命令：</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean #清除缓存</span><br><span class="line">hexo g 生成静态网页</span><br><span class="line">hexo d 部署，d即之前提到过的deploy</span><br></pre></td></tr></table></figure></li>
+</ol>
 
       
     </div>
