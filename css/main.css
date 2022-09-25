@@ -2754,7 +2754,7 @@ ul.breadcrumb li:last-child {
 }
 body {
   margin: 0;
-  background: url("/images/bluesky.jpg");
+  background-image: url("/images/bluesky.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: var(--text-color);
